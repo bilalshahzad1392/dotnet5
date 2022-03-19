@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'MyTestAppforGH'
-          slot-name: 'Production'
+          app-name: 'DotNetGHActionsApp'
+          #slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_76F8614A7156435F88221E220879911E }}
           package: .
